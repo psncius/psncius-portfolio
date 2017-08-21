@@ -1,10 +1,11 @@
-import {injectGlobal} from 'styled-components';
+import { injectGlobal } from 'styled-components';
+
 /* eslint-disable */
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  @import url('https://fonts.googleapis.com/css?family=VT323');
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'VT323', monospace;
     font-size: 24px;
   }
 `

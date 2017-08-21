@@ -4,7 +4,6 @@ import Home from './containers/Home';
 import App from './containers/App';
 
 Router.prototype.componentWillReceiveProps = function(nextProps) {
-
   let components = [];
   function grabComponents(element) {
     // This only works for JSX routes, adjust accordingly for plain JS config
