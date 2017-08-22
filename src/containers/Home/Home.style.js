@@ -41,6 +41,7 @@ export const RevealP = styled.p`
     transform: rotateY(90deg);
     transition: transform 1s;
   }
+  
   ${({ hide }) => hide && css`
     &:after {
       transform: rotateY(0deg);
