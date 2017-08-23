@@ -5,3 +5,7 @@ export const Container = styled.div`
   padding-right: 120px;
   padding-top: 30px;
 `;
+
+export const Relative = styled.div`
+  position: relative;
+`;
