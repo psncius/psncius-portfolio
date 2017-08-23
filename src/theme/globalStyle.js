@@ -6,7 +6,7 @@ injectGlobal`
 
   body {
     font-family: 'Roboto Slab', serif;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h1 , h2, h3 {
