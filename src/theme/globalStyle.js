@@ -1,4 +1,7 @@
 import { injectGlobal } from 'styled-components';
+import {
+  black
+} from 'theme/variables';
 
 /* eslint-disable */
 injectGlobal`
@@ -7,6 +10,7 @@ injectGlobal`
   body {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
+    color: ${black};
   }
 
   h1 , h2, h3 {

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {
-  yellow
+  yellow,
+  red
 } from 'theme/variables';
 
 export const ImageButton = styled.div`
@@ -38,4 +39,13 @@ export const Index = styled.div`
 
 export const ImageContainer = styled.div`
   width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+`;
+
+export const Title = styled.h1`
+  color: ${red};
+  font-weight: bold;
+  margin-top: 0;
 `;

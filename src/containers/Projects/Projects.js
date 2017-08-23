@@ -3,7 +3,8 @@ import Zoomy from 'react-zoomy';
 import {
   ImageButton,
   Index,
-  ImageContainer
+  ImageContainer,
+  Title
  } from './Projects.style';
 import {
   Container,
@@ -18,13 +19,14 @@ class Projects extends Component {
   render () {
     return (
       <Container>
-        <Relative marginBottom="100px">
+        <Title>Open Source Project</Title>
+        <Relative marginBottom="50px" marginTop="100px">
           <Index>
             <h1>01</h1>
           </Index>
           <h1>npm install --save <A href="">react zoomy</A></h1>
         </Relative>
-        <Flex justify={'center'}>
+        <Flex justify={'center'} marginBottom="5em">
           <Zoomy
             imageUrl={require('assets/DSC_0053.JPG')}
             renderThumbnail={({ showImage }) =>
@@ -43,7 +45,7 @@ class Projects extends Component {
           }}
           />
         </Flex>
-        <Relative marginBottom="100px">
+        <Relative marginBottom="50px">
           <Index>
             <h1>02</h1>
           </Index>

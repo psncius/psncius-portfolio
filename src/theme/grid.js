@@ -3,7 +3,16 @@ import media from 'theme/media';
 
 export const Div = styled.div`
   ${({ marginBottom }) => marginBottom && css`
-    marginBottom: ${marginBottom};
+    margin-bottom: ${marginBottom};
+  `  }
+  ${({ marginLeft }) => marginLeft && css`
+    margin-left: ${marginLeft};
+  `  }
+  ${({ marginRight }) => marginRight && css`
+    margin-right: ${marginRight};
+  `  }
+  ${({ marginTop }) => marginTop && css`
+    margin-top: ${marginTop};
   `  }
 `;
 
