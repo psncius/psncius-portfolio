@@ -27,3 +27,16 @@ export const A = styled.a`
     background-color: ${yellow};
   }
 `;
+
+// export const H1 = styled.h1`
+//   ${({align}) => align && `text-align: ${align};` }
+// `;
+//
+// export const H2 = styled.h2`
+//   ${({align}) => align && `text-align: ${align};` }
+// `;
+
+export const [H1, H2, H3, H4, H5, H6, P, Blockquote, Code] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'blockquote', 'code']
+  .map((tag) => styled[tag]`
+    ${({ align }) => align && `text-align: ${align};`}
+  `)
