@@ -7,18 +7,17 @@ const sizes = {
   giant: 1170
 };
 
-const media = Object.keys(sizes).reduce((finalMedia,size) => {
-  return {
-    ...finalMedia,
-    [size]: function(...args){
-      return css`
-        @media(max-width: ${sizes[size]}px) {
-          ${css(...args)}
-        }
-      `;
+export default Object.keys(sizes).reduce((accumulator, label) => {
+  const emSize = sizes[label] / 16;
+  accumulator[label] = (...args) => css`
+    @media (max-width: ${emSize}em) {
+      ${css(...args)}
     }
-  };
-},{})
+  `;
+  return accumulator
+}, {});
+
+
 
 // function phone(...args) {
 //   return css`
@@ -59,4 +58,4 @@ const media = Object.keys(sizes).reduce((finalMedia,size) => {
 //   giant
 // };
 //
-export default media;
+//export default media;

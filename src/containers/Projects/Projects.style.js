@@ -3,6 +3,7 @@ import {
   yellow,
   red
 } from 'theme/variables';
+import { media } from 'theme/media';
 
 export const ImageButton = styled.div`
   cursor: pointer;
